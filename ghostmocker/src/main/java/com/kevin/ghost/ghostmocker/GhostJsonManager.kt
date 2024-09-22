@@ -6,7 +6,7 @@ import com.kevin.ghost.ghostmocker.GhostConstants.LOG_TAG
 import java.io.FileNotFoundException
 
 
-class GhostJsonManager(
+internal class GhostJsonManager(
     private val assetManager: AssetManager
 ) {
     fun getJsonFromFile(fileName: String): String {
