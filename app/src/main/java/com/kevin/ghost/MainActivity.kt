@@ -46,9 +46,11 @@ private fun TestApi(
     modifier: Modifier = Modifier
 ) {
     val testUiState by testViewModel.uiState.collectAsStateWithLifecycle()
-    Column(modifier = modifier) {
+    Column(modifier = modifier.padding(16.dp)) {
         Text(text = testUiState.testUiModel.title)
         Spacer(modifier = Modifier.padding(8.dp))
         Text(text = testUiState.testUiModel.body)
+        Spacer(modifier = Modifier.padding(8.dp))
+        Text(text = testUiState.error, color = androidx.compose.ui.graphics.Color.Red)
     }
 }
