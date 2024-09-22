@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Ghost"
 include(":app")
+include(":ghostmocker")
