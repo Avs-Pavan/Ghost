@@ -6,8 +6,14 @@ import retrofit2.http.GET
 
 
 interface TestAPI {
-
-    @Mocked(fileName = "test", responseCode = 200)
+//
+//    @Mocked(fileName = "test", responseCode = 200)
+//    @GET("test")
+//    suspend fun getTest(): retrofit2.Response<TestDTO>
+//
+    @Mocked(fileName = "test_400", responseCode = 400)
     @GET("test")
     suspend fun getTest(): retrofit2.Response<TestDTO>
+
+
 }
