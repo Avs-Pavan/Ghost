@@ -46,7 +46,6 @@ afterEvaluate {
                 groupId = "com.github.Avs-Pavan"
                 artifactId = "GhostMocker"
                 version = "1.0"
-
             }
         }
     }
